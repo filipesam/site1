@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> something bootstrapped</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  </head>
+
+<body>
+
+<h1> hello </h1>
+
+<button class="btn btn-sucess" onclick="$(this).hide();"> Click here </button>
+
+
+
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/ssl.biz.tm"><img src="https://seal.beyondsecurity.com/verification-images/ssl.biz.tm/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
+</body>
+</html>
